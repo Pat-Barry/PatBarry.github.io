@@ -1,57 +1,163 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@500&family=Roboto&family=Roboto+Mono&display=swap');
 
 /* CSS RESET */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  body, html {
-    background-color: #0a192f;
-  }
+body, html {
+  background-color: #0a192f;
+}
+
+section {
+  padding: 0 200px;
+}
 
   /* Utility Classes */
-  .green-text {
-      color: #64ffda;
-  }
+.green-text {
+  color: #64ffda;
+}
 
-  .btn {
-    display: inline-block;
-    padding: 10px;
-    color: #64ffda;
-    background: #0a192f;
-    border: 1px solid #64ffda;
-    border-radius: 5px;
-    cursor: pointer;
-    text-decoration: none;
+.white-text {
+  color: #e6f1ff;
+}
 
-  }
+.grey-text {
+  color: #8892b0;
+}
 
-  /* Figure this out later */
-  /* .btn:hover {
-    background: #64ffda;
-    opacity: .5;
-  }  */
+.roboto {
+  font-family: 'Roboto Mono', monospace;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px;
+  color: #64ffda;
+  background: #0a192f;
+  border: 1px solid #64ffda;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+
+
+/* Figure this out later */
+/* .btn:hover {
+  background: #64ffda;
+  opacity: .5;
+}  */
 
   /* Navbar */
-  #navbar {
-    padding: 30px 50px;
-  }
-
-  #navbar .container {
-      display: flex;
-      justify-content: space-between;
-      font-family: 'Roboto Mono', monospace;
-  }
-
-  #navbar .right-side-content ul{
-      display: flex;
-      list-style-type: none;
-      color: #e6f1ff;
-  }
-
-  #navbar .right-side-content ul li{
-    margin-right: 30px;
+#navbar {
+  padding: 30px 50px;
+  margin-bottom: 100px;
 }
+
+#navbar .container {
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Roboto Mono', monospace;
+}
+
+#navbar .left-side-content {
+  display: flex;
+  align-items: center;
+  font-size: 22px;
+}
+
+#navbar .left-side-content .border {
+  border: 1px solid #64ffda;
+  padding: 10px;
+}
+
+#navbar .right-side-content {
+  display: flex;
+  align-items: center;
+}
+
+#navbar .right-side-content ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    color: #e6f1ff;
+}
+
+#navbar .right-side-content ul li{
+  margin-right: 30px;
+}
+
+/* Intro Section */
+
+#intro {
+  margin-bottom: 250px;
+}
+
+#intro .container h3 { 
+  font-family: 'Roboto Mono', monospace;
+  margin-bottom: 20px;
+}
+
+#intro .container h2 { 
+  font-size: 64px;
+  font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+#intro .container .grey-text { 
+  margin-bottom: 30px;
+}
+
+#intro .container p { 
+  font-size: 18px;
+  font-family: 'Roboto Mono', sans-serif;
+  width: 600px;
+}
+
+/* About section */
+#about h2 {
+  font-family: 'Be Vietnam Pro', sans-serif;
+  font-size: 25px;
+  margin-bottom: 36px;
+}
+
+#about .container {
+  display: flex;
+}
+
+#about .right-about {
+  width: 50%;
+}
+#about .left-about {
+  width: 50%;
+}
+
+#about h2 .green-text {
+  font-family: 'Roboto Mono', sans-serif;
+}
+
+#about p {
+  font-family: 'Roboto Mono', sans-serif;
+}
+
+#about .tech-container {
+  display: flex;
+  margin-top: 24px;
+}
+
+#about .tech-container ul {
+  list-style-type: none;
+}
+
+#about .tech-container .languages {
+  padding-right: 100px;
+}
+
+
+
+
+
+
+
