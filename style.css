@@ -43,6 +43,12 @@ section {
   text-decoration: none;
 }
 
+.green-border {
+  border: 1px solid #64ffda;
+  border-radius: 5px;
+  padding: 20px;
+}
+
 
 
 /* Figure this out later */
@@ -117,6 +123,9 @@ section {
 }
 
 /* About section */
+#about {
+  margin-bottom: 250px;
+}
 #about h2 {
   font-family: 'Be Vietnam Pro', sans-serif;
   font-size: 25px;
@@ -155,8 +164,99 @@ section {
   padding-right: 100px;
 }
 
+/* Work Experience Section */
 
+#experience h2 {
+  font-family: 'Be Vietnam Pro', sans-serif;
+  font-size: 25px;
+  margin-bottom: 36px;
+}
 
+/* Timeline */
+.timeline-container {
+  padding: 2rem;
+  padding-bottom: 400px;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.top-section {
+  text-align: center;
+  padding: 4rem 0;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.timeline {
+  position: relative;
+  min-height: 150px;
+}
+
+.line {
+  position: absolute;
+  z-index: 2;
+  left: calc(50% - 1px);
+  width: 2px;
+  top: -50px;
+  background-color: #64ffda;
+  display: none;
+}
+
+.line::before,
+.line::after {
+  position: absolute;
+  display: block;
+  content: '';
+  height: 1rem;
+  width: 1rem;
+  border-radius: 50%;
+  background-color: #64ffda;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.line::after {
+  bottom: 0;
+}
+
+.section {
+  display: flex;
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: 600ms ease;
+  position: relative;
+  z-index: 1;
+  margin: 50px 0;
+  padding: 1rem;
+  align-items: center;
+  min-height: 300px;
+}
+
+.section:nth-child(odd) {
+  flex-direction: row-reverse;
+  transform: translateX(100%);
+}
+
+.bead {
+  position: absolute;
+  display: block;
+  height: 1rem;
+  width: 1rem;
+  border-radius: 50%;
+  background-color: #e6f1ff;
+  left: 50%;
+  top: 20%;
+  transform: translateX(-50%);
+}
+
+.content {
+  width: calc(50% - 2rem);
+}
+
+.show-me:nth-child(n) {
+  transform: none;
+  opacity: 1;
+}
 
 
 
