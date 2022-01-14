@@ -32,6 +32,10 @@ section {
   font-family: 'Roboto Mono', monospace;
 }
 
+.vietnam {
+  font-family: 'Be Vietnam Pro', sans-serif;
+}
+
 .btn {
   display: inline-block;
   padding: 10px;
@@ -99,7 +103,7 @@ section {
 /* Intro Section */
 
 #intro {
-  margin-bottom: 250px;
+  margin-bottom: 200px;
 }
 
 #intro .container h3 { 
@@ -124,7 +128,7 @@ section {
 
 /* About section */
 #about {
-  margin-bottom: 250px;
+  margin-bottom: 200px;
 }
 #about h2 {
   font-family: 'Be Vietnam Pro', sans-serif;
@@ -187,7 +191,7 @@ section {
 /* Timeline */
 .timeline-container {
   padding: 2rem;
-  padding-bottom: 400px;
+  padding-bottom: 200px;
   margin: 0 auto;
   max-width: 800px;
 }
@@ -271,6 +275,26 @@ section {
 }
 
 /* Work Section */
+#work {
+  margin-bottom: 200px;
+}
+
+#work h2 {
+  margin-bottom: 50px;
+}
+
+#work .grid-container {
+  display: grid;
+  gap: 1.5 rem;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+#work .grid-container .flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
 
 
