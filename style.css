@@ -100,6 +100,12 @@ section {
   margin-right: 30px;
 }
 
+#navbar .right-side-content ul li a {
+  text-decoration: none;
+  color: #e6f1ff;
+  cursor: pointer;
+}
+
 /* Intro Section */
 
 #intro {
@@ -279,21 +285,54 @@ section {
   margin-bottom: 200px;
 }
 
-#work h2 {
+#work img {
+  width: 300px;
+  height: auto;
+}
+
+#work .image {
+  position: relative;
+}
+
+#work .image::after {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: #64ffda;
+  opacity: .3;
+  top: 0;
+  left: 0;
+  display: block;
+  content: '';
+}
+
+#work .image.green-border {
+  padding: 0;
+}
+
+#work .right {
+  text-align: end;
   margin-bottom: 50px;
+}
+
+#work h2 {
+  margin-bottom: 25px;
 }
 
 #work .grid-container {
   display: grid;
-  gap: 1.5 rem;
-  grid-template-columns: 1fr 1fr 1fr;
+  gap: 5rem;
+  grid-template-columns: repeat(3, 1fr);
 }
 
 #work .grid-container .flex {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+}
+
+#work .grid-container p {
+  margin-top: 25px;
 }
 
 
