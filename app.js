@@ -1,5 +1,4 @@
-// Potentially delete
-
+// Navbar
 var prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
   var currentScrollPos = window.pageYOffset;
@@ -11,9 +10,15 @@ window.onscroll = function() {
   prevScrollpos = currentScrollPos;
 }
 
+// Typing animation
+var typed = new Typed(".typed", {
+    strings: ['code.'],
+    typeSpeed: 100,
+    backSpeed: 60,
+    loop: true
+});
 
-
-
+// Timeline
 function qs(selector, all = false) {
     return all ? document.querySelectorAll(selector) : document.querySelector(selector)
 }
