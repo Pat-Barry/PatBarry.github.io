@@ -170,6 +170,7 @@ section {
 
 #about .right-about {
   width: 50%;
+  padding-left: 175px;
 }
 #about .left-about {
   width: 50%;
@@ -194,6 +195,17 @@ section {
 
 #about .tech-container .languages {
   padding-right: 100px;
+}
+
+#about .right-about div {
+  padding: 0;
+  width: 300px;
+  height: auto;
+}
+
+#about .right-about .pat {
+  max-width:100%;
+  max-height:100%;
 }
 
 /* Work Experience Section */
