@@ -12,7 +12,7 @@ body, html {
 }
 
 section {
-  padding: 0 200px;
+  padding: 0 5rem;
 }
 
   /* Utility Classes */
@@ -126,6 +126,78 @@ section {
   color:#64ffda;
 }
 
+.menu-btn {
+  position: relative;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.menu-btn_lines, 
+.menu-btn_lines::before,
+.menu-btn_lines::after {
+  width: 1.5rem;
+  height: 0.1rem;
+  background-color: #64ffda;
+  transition: all 0.5s ease-in-out;
+}
+
+.menu-btn_lines::before,
+.menu-btn_lines::after {
+  content: '';
+  position: absolute;
+}
+
+.menu-btn_lines::before {
+  transform: translateY(-0.5rem);
+}
+
+.menu-btn_lines::after {
+  transform: translateY(0.5rem);
+}
+
+.menu-btn.open .menu-btn_lines {
+  transform: translateX(2rem);
+  background-color: transparent;
+}
+
+.menu-btn.open .menu-btn_lines::before {
+  transform: rotate(45deg) translate(-1.5rem,1.5rem);
+}
+
+.menu-btn.open .menu-btn_lines::after {
+  transform: rotate(-45deg) translate(-1.5rem, -1.5rem);
+}
+
+@media (max-width: 900px) {
+  .menu-btn {
+    display: flex;
+  }
+
+  .right-side-content ul {
+    flex-direction: column;
+    justify-content: space-around;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 100vh;
+    transform: translateX(100vw);
+    background-color: rgb(10, 25, 47, .9);
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .right-side-content ul.open {
+    transform: translateX(0);
+  }
+}
+
+
+
 /* Intro Section */
 
 #intro {
@@ -215,6 +287,8 @@ section {
   font-size: 25px;
   margin-bottom: 25px;
 }
+
+
 
 #experience .content.green-border {
   padding: 30px;

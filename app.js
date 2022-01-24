@@ -1,14 +1,25 @@
+
+  
 // Navbar
-var prevScrollpos = window.pageYOffset;
-window.onscroll = function() {
-  var currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos) {
-    document.getElementById("navbar").style.top = "0";
-  } else {
-    document.getElementById("navbar").style.top = "-100px";
-  }
-  prevScrollpos = currentScrollPos;
-}
+var lastScrollTop = 0
+const navbar = document.getElementById('navbar')
+window.addEventListener("scroll", function(){
+    var scrollTop = window.pageYOffset || this.document.documentElement.scrollTop
+    if (scrollTop > lastScrollTop){
+        navbar.style.top='-96px'
+    } else {
+        navbar.style.top='0'
+    }
+    lastScrollTop = scrollTop
+})
+
+const menuBtn = document.querySelector('.menu-btn');
+const menuItems = document.querySelector('.right-side-content ul')
+
+menuBtn.addEventListener('click', () => {
+    menuBtn.classList.toggle('open');
+    menuItems.classList.toggle('open');
+});
 
 // Typing animation
 var typed = new Typed(".typed", {
@@ -18,7 +29,7 @@ var typed = new Typed(".typed", {
     loop: true
 });
 
-// Timeline
+
 function qs(selector, all = false) {
     return all ? document.querySelectorAll(selector) : document.querySelector(selector)
 }
@@ -69,4 +80,8 @@ function scrollHandler(e){
 
 scrollHandler();
 line.style.display = 'block';
-window.addEventListener('scroll', scrollHandler)
+window.addEventListener('scroll', scrollHandler)  
+
+// Timeline
+
+
