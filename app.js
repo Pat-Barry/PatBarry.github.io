@@ -22,14 +22,14 @@ menuBtn.addEventListener('click', () => {
 });
 
 // Typing animation
-var typed = new Typed(".typed", {
-    strings: ['code.'],
-    typeSpeed: 100,
-    backSpeed: 60,
-    loop: true
-});
+// var typed = new Typed(".typed", {
+//     strings: ['code.'],
+//     typeSpeed: 100,
+//     backSpeed: 60,
+//     loop: true
+// });
 
-
+   
 function qs(selector, all = false) {
     return all ? document.querySelectorAll(selector) : document.querySelector(selector)
 }
@@ -80,8 +80,5 @@ function scrollHandler(e){
 
 scrollHandler();
 line.style.display = 'block';
-window.addEventListener('scroll', scrollHandler)  
-
-// Timeline
-
+window.addEventListener('scroll', scrollHandler)
 
